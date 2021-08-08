@@ -109,7 +109,7 @@ RUN wget -O ~/miniconda.sh https://repo.continuum.io/miniconda/Miniconda3-latest
      rm ~/miniconda.sh
 ENV PATH /opt/conda/bin:$PATH
 RUN conda install -y python=3.8 numpy scipy h5py scikit-learn matplotlib dask pandas pyyaml mkl
-RUN pip install tensorboard tensorboardX pyarrow 
+RUN pip install tensorboard tensorboardX pyarrow boto3 iopath 
 
 # install pytorch
 RUN ldconfig
